@@ -1,0 +1,30 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "frontend:test:e2e": "npx cypress open",
+    "api:start:test": "cd ../backend && npm run start:test",
+    "api:db:reset": "cd ../backend && npm run testdb:reseed",
+    "api:db:setup": "cd ../backend && npm run testdb:setup",
+    "test:e2e:dev": "npm-run-all --print-label --sequential api:db:setup --parallel dev api:start:test frontend:test:e2e"
+  },
+  "dependencies": {
+    "@types/node": "20.4.6",
+    "@types/react": "18.2.18",
+    "@types/react-dom": "18.2.7",
+    "axios": "^1.4.0",
+    "cypress": "^12.17.4",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "next": "13.4.12",
+    "npm-run-all": "^4.1.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.1.6"
+  }
+}

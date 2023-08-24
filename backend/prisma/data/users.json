@@ -1,0 +1,23 @@
+[
+  {
+    "id": "cllo6ax6q000d08kx0u6k9a19",
+    "name": "Joe",
+    "email": "joe@joe.com",
+    "password": "1234",
+    "admin": true
+  },
+  {
+    "id": "cllo6b9c5000f08kxcdj3hmqx",
+    "name": "Alice",
+    "email": "alice@alice.com",
+    "password": "1234",
+    "admin": false
+  },
+  {
+    "id": "cllo6bfhm000g08kx0b321o5t",
+    "name": "Bob",
+    "email": "bob@bob.com",
+    "password": "1234",
+    "admin": false
+  }
+]
